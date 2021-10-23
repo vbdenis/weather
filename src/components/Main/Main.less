@@ -3,4 +3,19 @@
 @b: e('.main');
 
 @{b} {
+    padding: 0 32px;
+    background: @mainGradient;
+
+    &__header {
+        padding: 32px 0 20px;
+    }
+
+    &__info {
+        padding: 20px 0;
+        border-bottom: 1px solid fade(@clearWhite, 10%);
+    }
+
+    &__condition {
+        padding: 20px 0 32px;
+    }
 }

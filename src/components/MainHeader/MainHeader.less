@@ -1,0 +1,20 @@
+@import '../../styles/base.less';
+
+@b: e('.main-header');
+
+@{b} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 28px;
+    outline: 1px solid pink;
+
+    &__icon {
+        background-image: url(../../icons/pin.svg);
+        // background-color: #fff;
+        margin-right: 8px;
+        height: 30px;
+        width: 30px;
+    }
+}
