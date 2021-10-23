@@ -3,12 +3,15 @@
 @b: e('.main-info');
 
 @{b} {
-    &__image {
-        margin: 0 auto 20px;
+    &__image-wrapper {
+        margin: 0 auto;
         display: block;
-        width: 200px;
-        height: 200px;
-        background-color: blue;
+        width: 250px;
+        height: 250px;
+    }
+
+    &__image {
+        max-width: 100%;
     }
 
     &__temp {
