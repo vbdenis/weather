@@ -15,15 +15,17 @@
     }
 
     &__temp {
+        position: relative;
         font-size: 150px;
         font-weight: 500;
         line-height: 0.8;
-    }
-
-    &__degree {
-        font-size: 60px;
-        vertical-align: top;
-        color: @mutedWhite;
+        &:after {
+            position: absolute;
+            top: 0;
+            content: '°';
+            font-size: 60px;
+            color: @mutedWhite;
+        }
     }
 
     &__situation {

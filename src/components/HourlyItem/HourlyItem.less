@@ -3,7 +3,38 @@
 @b: e('.hourly-item');
 
 @{b} {
+    width: 25%;
+    flex: 1;
+    padding: 10px;
+    border-radius: 24px;
+    border: 1px solid fade(@clearWhite, 10%);
+    text-align: center;
+    cursor: pointer;
+    transition: 200ms ease;
+
+    &__temperature {
+        position: relative;
+        &:after {
+            position: absolute;
+            top: 0;
+            content: '°';
+            font-size: 16px;
+            color: @clearWhite;
+        }
+    }
+
     &__image {
         max-width: 100%;
     }
+
+    &__time {
+        font-size: 12px;
+        color: @mutedWhite;
+    }
+}
+
+//mod active
+@{b}_active {
+    background: @mainGradient;
+    transform: scale(1.1);
 }

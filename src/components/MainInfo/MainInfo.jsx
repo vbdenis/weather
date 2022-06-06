@@ -4,17 +4,18 @@ import './MainInfo.less';
 import image from './image.png';
 
 const cn = createCn('main-info');
-const MainInfo = () => {
+const MainInfo = ({ temperature, situation }) => {
+    const roundedTemp = Math.round(temperature);
+
     return (
         <div className={cn()}>
             <div className={cn('image-wrapper')}>
-                <img className={cn('image')} src={image} alt="storm" />
+                <img className={cn('image')} src={image} alt="" />
             </div>
             <div className={cn('temp')}>
-                21
-                <span className={cn('degree')}>&deg;</span>
+                {roundedTemp}
             </div>
-            <div className={cn('situation')}>Thunderstorm</div>
+            <div className={cn('situation')}>{situation}</div>
             <div className={cn('date')}>Monday, 17 May</div>
         </div>
     )

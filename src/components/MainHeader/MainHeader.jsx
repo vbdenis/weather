@@ -1,7 +1,6 @@
 import React from 'react';
 import { createCn } from 'bem-react-classname';
 import './MainHeader.less';
-import drop from '../../icons/drop.svg';
 
 const cn = createCn('main-header');
 const MainHeader = () => {
