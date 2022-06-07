@@ -6,7 +6,7 @@ import { getforecastHourInterval } from '../../api/getWeatherData';
 
 const cn = createCn('hourly-wrapper');
 const HourlyWrapper = () => {
-    const [hourlyData, setHourlyData] = useState([]);
+    const [ hourlyData, setHourlyData ] = useState([]);
 
     async function fetchForecast() {
         const response = await getforecastHourInterval();
@@ -17,14 +17,10 @@ const HourlyWrapper = () => {
         fetchForecast()
     }, []);
 
-    console.log('fetchForecast: ', hourlyData);
+    // console.log('fetchForecast: ', hourlyData);
 
     const renderItems = hourlyData.map((item, index) => {
-        return (
-            <React.Fragment key = {index}>
-                <HourlyItem data={item} />
-            </React.Fragment>
-        )
+        return <HourlyItem data={item} key = {index} />
     })
 
     return (

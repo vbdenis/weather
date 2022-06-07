@@ -19,9 +19,12 @@ const MainConditionWrapper = ({ conditionData }) => {
         const { icon, unit, title } = ITEMS_DATA[index];
 
         return (
-            <React.Fragment key = {index + title}>
-                <MainConditionItem icon={icon} value={item + unit} title={title}/>
-            </React.Fragment>
+                <MainConditionItem
+                    icon={icon}
+                    value={item + unit}
+                    title={title}
+                    key = {index + title}
+                />
         )
     })
 
