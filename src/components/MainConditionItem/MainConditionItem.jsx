@@ -8,8 +8,8 @@ const MainConditionItem = ({ icon, value, title }) => {
     return (
         <div className={cn()}>
             <img className={cn('icon')} src={icon} alt='' />
-                <div className={cn('value')}>{value}</div>
-                <div className={cn('title')}>{title}</div>
+            <div className={cn('value')}>{value}</div>
+            <div className={cn('title')}>{title}</div>
         </div>
     )
 };
