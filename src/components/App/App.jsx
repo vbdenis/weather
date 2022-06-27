@@ -1,5 +1,4 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import Main from '../Main/Main';
 import { createCn } from 'bem-react-classname';
 import './App.less';

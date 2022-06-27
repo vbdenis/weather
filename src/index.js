@@ -4,7 +4,7 @@ import { legacy_createStore as createStore} from 'redux';
 import { Provider } from 'react-redux';
 import App from './components/App/App';
 import './styles/main.less';
-import { rootReducer } from './redux/rootReducer';
+import { rootReducer } from './redux/reducers/rootReducer';
 
 const store = createStore(rootReducer);
 

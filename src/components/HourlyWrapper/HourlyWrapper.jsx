@@ -17,10 +17,10 @@ const HourlyWrapper = () => {
         fetchForecast()
     }, []);
 
-    // console.log('fetchForecast: ', hourlyData);
+    console.log('fetchForecast: ', hourlyData);
 
     const renderItems = hourlyData.map((item, index) => {
-        return <HourlyItem data={item} key = {index} />
+        return <HourlyItem data={item} key={index} />
     })
 
     return (

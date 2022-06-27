@@ -25,7 +25,7 @@ export async function getforecastToday(cityName = city) {
     }
 };
 
-export async function geforecastFiveDays() {
+export async function getforecastFiveDays() {
     try {
         const response = await axios.get(forecastFiveDays);
         return response.data;

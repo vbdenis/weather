@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { createCn } from 'bem-react-classname';
 import { useDispatch } from 'react-redux';
-import { inputText } from '../../redux/actions';
+import { inputText } from '../../redux/actions/actions';
 import './MainHeader.less';
 import { getforecastToday } from '../../api/getWeatherData';
 import searchIcon from '../../icons/search.svg';
@@ -18,7 +18,7 @@ const cn = createCn('main-header');
 
     // Отслеживаем изменение инпута, и записываем в стейт
     const handleInputChange = (e) => {
-        setTitle(e.target.value)
+        setTitle(e.target.value);
     };
 
     /*

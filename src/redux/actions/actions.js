@@ -1,4 +1,4 @@
-import { INPUT_TEXT } from "./types";
+import { INPUT_TEXT } from "../types";
 
 export function inputText(data) {
     return {
@@ -6,3 +6,4 @@ export function inputText(data) {
         data,
     }
 }
+
